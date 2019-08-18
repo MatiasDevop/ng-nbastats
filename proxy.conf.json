@@ -1,0 +1,9 @@
+{
+    "/stats/*": {
+        "target": "https://stats.nba.com",
+        "secure": false,
+        "changeOrigin": true
+
+
+    }
+}

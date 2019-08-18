@@ -1,0 +1,20 @@
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Surname</th>
+            <th scope="col">Equipment</th>
+            <th scope="col">Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of players">
+            <th> <a style="cursor: pointer;" class="btn btn-primary" [routerLink]="['/player', item.id]">Select</a></th>
+            <th>{{item.name}}</th>
+            <th>{{item.surname}}</th>
+            <th>{{item.equipment}}</th>
+            <th>{{item.age}}</th>
+        </tr>
+    </tbody>
+</table>
